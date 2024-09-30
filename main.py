@@ -6,12 +6,12 @@ class Employee:
 
 employees = [
     Employee("Vera", 2000, "Manager"),
-    Employee("Chuck", 1800, "Attendant"),
-    Employee("Samantha", 1800, "Attendant"),
+    Employee("Chuck", 1800, "Station Attendant"),
+    Employee("Samantha", 1800, "Station Attendant"),
     Employee("Roberto", 2100, "Cook"),
-    Employee("Dave", 2200, "Car Repair"),
-    Employee("Tina", 2300, "Car Repair"),
-    Employee("Ringo", 1900, "Car Repair")
+    Employee("Dave", 2200, "Mechanic"),
+    Employee("Tina", 2300, "Mechanic"),
+    Employee("Ringo", 1900, "Mechanic")
 ]
 
 for e in employees:
