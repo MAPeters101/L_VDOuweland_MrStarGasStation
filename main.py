@@ -14,4 +14,12 @@ employees = [
 ]
 
 for e in employees:
-    print(f"{e.name}, ${e.salary}")
+    if e.name == "Vera":
+        print(f"{e.name}, ${e.salary}, Manager")
+    if e.name == "Chuck" or e.name == "Samantha":
+        print(f"{e.name}, ${e.salary}, Attendant")
+    if e.name == "Roberto":
+        print(f"{e.name}, ${e.salary}, Cook")
+    if e.name == "Dave" or e.name == "Tina" or e.name == "Ringo":
+        print(f"{e.name}, ${e.salary}, Car Repair")
+
