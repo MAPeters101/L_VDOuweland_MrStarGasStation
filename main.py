@@ -1,17 +1,25 @@
 class Employee:
-    def __init__(self, name, salary, job_title):
+    def __init__(self, name, salary):
         self.name = name
         self.salary = salary
 
+class Manager(Employee):
+    job_title = "Manager"
+
+class Cook(Employee):
+    job_title = "Cook"
+
+class Attendant(Employee):
+    job_title = "Station Attendant"
 
 class Mechanic(Employee):
     job_title = "Mechanic"
 
 employees = [
-    Employee("Vera", 2000),
-    Employee("Chuck", 1800),
-    Employee("Samantha", 1800),
-    Employee("Roberto", 2100),
+    Manager("Vera", 2000),
+    Attendant("Chuck", 1800),
+    Attendant("Samantha", 1800),
+    Cook("Roberto", 2100),
     Mechanic("Dave", 2200),
     Mechanic("Tina", 2300),
     Mechanic("Ringo", 1900)
