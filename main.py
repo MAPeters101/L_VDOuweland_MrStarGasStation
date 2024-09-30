@@ -10,7 +10,8 @@ employees = [
     Employee("Roberto", 2100),
     Employee("Dave", 2200),
     Employee("Tina", 2300),
-    Employee("Ringo", 1900)
+    Employee("Ringo", 1900),
+    Employee("Wendy", 2000)
 ]
 
 for e in employees:
