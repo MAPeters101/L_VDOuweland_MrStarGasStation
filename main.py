@@ -20,5 +20,14 @@ def print_accounting_report():
     for e in employees:
         print(f"{e.name}, ${e.salary}")
 
+def print_staffing_report():
+    print("Staffing")
+    print("========")
+    for e in employees:
+        print(f"{e.name}, {e.job_title}")
+
+
 print_accounting_report()
+print()
+print_staffing_report()
 
