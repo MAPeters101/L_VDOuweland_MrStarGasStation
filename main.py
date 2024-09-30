@@ -1,4 +1,7 @@
-
+from employee import Manager
+from employee import Attendant
+from employee import Cook
+from employee import Mechanic
 
 employees = [
     Manager("Vera", 2000),
