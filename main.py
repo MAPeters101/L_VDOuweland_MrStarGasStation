@@ -1,6 +1,7 @@
-names = ["Vera", "Chuck", "Samantha", "Roberto", "Joe", "Dave", "Tina", "Ringo"]
-salaries = [2000, 18000, 18000, 21000, 2000, 2200, 2300, 1900]
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
 
-count = len(names)
-for c in range(count):
-    print(f"{names[c]}, %{salaries[c]}")
+e = Employee("Vera", 2000)
+print(e)
