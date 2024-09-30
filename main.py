@@ -4,13 +4,14 @@ from employee import Cook
 from employee import Mechanic
 
 employees = [
-    Manager("Vera", 2000),
-    Attendant("Chuck", 1800),
-    Attendant("Samantha", 1800),
-    Cook("Roberto", 2100),
-    Mechanic("Dave", 2200),
-    Mechanic("Tina", 2300),
-    Mechanic("Ringo", 1900)
+    Manager("Vera", "Schmidt", 2000),
+    Attendant("Chuck", "Norris", 1800),
+    Attendant("Samantha", "Carrington", 1800),
+    Cook("Roberto", "Jacketti", 2100),
+    Mechanic("Dave", "DreiBig", 2200),
+    Mechanic("Tina", "River", 2300),
+    Mechanic("Ringo", "Rama", 1900),
+    Mechanic("Chuck", "Rainey", 1800)
 ]
 
 
