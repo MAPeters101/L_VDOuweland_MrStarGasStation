@@ -13,6 +13,12 @@ employees = [
     Mechanic("Ringo", 1900)
 ]
 
-for e in employees:
-    print(f"{e.name}, ${e.salary}, {e.job_title}")
+
+def print_accounting_report():
+    print("Accounting")
+    print("==========")
+    for e in employees:
+        print(f"{e.name}, ${e.salary}")
+
+print_accounting_report()
 
