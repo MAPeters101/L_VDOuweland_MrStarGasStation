@@ -4,4 +4,4 @@ class Employee:
         self.salary = salary
 
 e = Employee("Vera", 2000)
-print(e)
+print(f"{e.name}, {e.salary}")
