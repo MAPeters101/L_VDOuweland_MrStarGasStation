@@ -24,7 +24,7 @@ class ScheduleReport(Report):
         print("Schedule")
         print("========")
         for e in self._emp_list:
-            print(f"{e.get_full_name()}, {e.start_time:%H:%M} to {e.end_time:%H:%M}")
+            print(f"{e.get_full_name()}, {e.shift.get_shift_info()}")
 
 
 
