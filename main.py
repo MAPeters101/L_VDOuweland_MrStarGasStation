@@ -16,9 +16,11 @@ employees = [
     Mechanic("Chuck", "Rainey", 1800)
 ]
 
-accounting_report = AccountingReport(employees)
-accounting_report.print_accounting_report()
-print()
-staffing_report = StaffingReport(employees)
-staffing_report.print_staffing_report()
+reports = [
+    AccountingReport(employees),
+    StaffingReport(employees)
+]
 
+for r in reports:
+    r.print_report()
+    print()

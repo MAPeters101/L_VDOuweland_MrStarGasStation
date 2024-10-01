@@ -5,7 +5,7 @@ class Report:
 
 
 class AccountingReport(Report):
-    def print_accounting_report(self):
+    def print_report(self):
         print("Accounting")
         print("==========")
         for e in self._emp_list:
@@ -13,7 +13,7 @@ class AccountingReport(Report):
 
 
 class StaffingReport(Report):
-    def print_staffing_report(self):
+    def print_report(self):
         print("Staffing")
         print("========")
         for e in self._emp_list:
