@@ -7,7 +7,7 @@ from reporting import StaffingReport
 from reporting import ScheduleReport
 from shift import MorningShift
 from shift import AfternoonShift
-import datetime
+
 
 employees = [
     Manager("Vera", "Schmidt", 2000, MorningShift()),
