@@ -2,6 +2,7 @@ from employee import Manager
 from employee import Attendant
 from employee import Cook
 from employee import Mechanic
+from reporting import AccountingReport
 
 employees = [
     Manager("Vera", "Schmidt", 2000),
@@ -14,21 +15,7 @@ employees = [
     Mechanic("Chuck", "Rainey", 1800)
 ]
 
-
-def print_accounting_report():
-    print("Accounting")
-    print("==========")
-    for e in employees:
-        print(f"{e.get_full_name()}, ${e.salary}")
-
-def print_staffing_report():
-    print("Staffing")
-    print("========")
-    for e in employees:
-        print(f"{e.get_full_name()}, {e.job_title}")
-
-
-print_accounting_report()
+accounting_report = AccountingReport(employees)
+accounting_report.print_accounting_report()
 print()
-print_staffing_report()
 
