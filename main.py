@@ -19,13 +19,13 @@ def print_accounting_report():
     print("Accounting")
     print("==========")
     for e in employees:
-        print(f"{e.first_name} {e.last_name}, ${e.salary}")
+        print(f"{e.get_full_name()}, ${e.salary}")
 
 def print_staffing_report():
     print("Staffing")
     print("========")
     for e in employees:
-        print(f"{e.first_name} {e.last_name}, {e.job_title}")
+        print(f"{e.get_full_name()}, {e.job_title}")
 
 
 print_accounting_report()
