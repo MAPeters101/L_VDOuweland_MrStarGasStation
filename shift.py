@@ -12,4 +12,7 @@ class AfternoonShift(Shift):
     start_time = datetime.time(12, 00)
     end_time = datetime.time(20, 00)
 
+class NightShift(Shift):
+    start_time = datetime.time(14, 00)
+    end_time = datetime.time(22, 00)
 

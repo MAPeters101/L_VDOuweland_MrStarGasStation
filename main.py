@@ -7,6 +7,7 @@ from reporting import StaffingReport
 from reporting import ScheduleReport
 from shift import MorningShift
 from shift import AfternoonShift
+from shift import NightShift
 
 
 employees = [
@@ -17,7 +18,7 @@ employees = [
     Mechanic("Dave", "DreiBig", 2200, MorningShift()),
     Mechanic("Tina", "River", 2300, MorningShift()),
     Mechanic("Ringo", "Rama", 1900, AfternoonShift()),
-    Mechanic("Chuck", "Rainey", 1800, AfternoonShift())
+    Mechanic("Chuck", "Rainey", 1800, NightShift())
 ]
 
 reports = [
