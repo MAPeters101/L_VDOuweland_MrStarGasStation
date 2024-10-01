@@ -1,7 +1,10 @@
-class AccountingReport:
+class Report:
     def __init__(self, emp_list):
         self._emp_list = emp_list
 
+
+
+class AccountingReport(Report):
     def print_accounting_report(self):
         print("Accounting")
         print("==========")
@@ -9,10 +12,7 @@ class AccountingReport:
             print(f"{e.get_full_name()}, ${e.salary}")
 
 
-class StaffingReport:
-    def __init__(self, emp_list):
-        self._emp_list = emp_list
-
+class StaffingReport(Report):
     def print_staffing_report(self):
         print("Staffing")
         print("========")
