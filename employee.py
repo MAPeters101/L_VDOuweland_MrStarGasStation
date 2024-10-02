@@ -11,6 +11,11 @@ class Employee:
     def get_full_name(self):
         return f"{self._first_name} {self._last_name}"
 
+    def raise_salary(self, amount):
+        self.salary += amount
+
+
+
 class Manager(Employee):
     job_title = "Manager"
 
